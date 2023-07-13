@@ -36,6 +36,9 @@ deploy:
       value: frdemo-kafka:9092
     - name: MAPBOX_BASE_URL
       value: frmapbox-mock:9123
+# any non-null value will disable jolokia
+#    - name: AB_JOLOKIA_OFF
+#      value: "true"
   resources:
     requests:
       cpu: 100m
